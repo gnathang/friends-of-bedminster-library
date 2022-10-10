@@ -3,7 +3,7 @@
   <div class="container">
 
     <div class="coming-up-title-and-button">
-      <h2>Coming Up</h2>
+      <h2 class="coming-up">Coming Up</h2>
       <!-- <button href="" class="button all-events-button">All Events</button> -->
       <a href="events" class="button all-events-button">All Events</a>
     </div>

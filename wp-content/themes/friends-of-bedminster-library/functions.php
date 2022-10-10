@@ -201,6 +201,7 @@ function create_posttype() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array('slug' => 'events'),
+			'supports' => array('title','author','thumbnail')
     )
   );
 
@@ -213,10 +214,9 @@ function create_posttype() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'welcome-section'),
+			'supports' => array('title','author','thumbnail')
 		)
 	);
-
-
 
 	register_post_type( 'sections',
 		array(
@@ -227,6 +227,7 @@ function create_posttype() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'section'),
+			'supports' => array('title','author','thumbnail')
 		)
 	);
 

@@ -33,15 +33,24 @@
 
       <div class="event-header-wrapper">
         <h2 class="event-title"><?php the_title(); ?></h2>
-          <div class="event-date-wrapper">
-            <img src="<?php bloginfo('template_directory');?>/assets/calendar4-icon.svg">
-            <h2 class="event-date"><?php the_field('event_date'); ?></h2>
-          </div>
-          <div class="event-location-wrapper">
-            <img src="<?php bloginfo('template_directory');?>/assets/pin4-icon.svg">
-            <h2 class="event-location"><?php the_field('event_location'); ?></h2>
-          </div>
+
+        <div class="event-date-wrapper">
+          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/calendar4-icon.svg">
+          <h2 class="event-date"><?php the_field('event_date'); ?> <?php the_field('event_date_end'); ?></h2>
+        </div>
+
+        <div class="event-location-wrapper">
+          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/pin4-icon.svg">
+          <h2 class="event-location"><?php the_field('event_location'); ?></h2>
+        </div>
+
+        <div class="event-contact-wrapper">
+          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/phone.svg">
+          <h2 class="event-location"><?php the_field('event_contact'); ?></h2>
+        </div>
+
       </div>
+
       <p class="event-summary"><?php the_field('event_summary'); ?></p>
 
       <div class="event-description-wrapper">

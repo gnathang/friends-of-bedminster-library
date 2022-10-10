@@ -37,7 +37,7 @@
 			<div class="header-container">
 
 				<a class="logo-container" href="<?php echo get_home_url(); ?>">
-					<img id="logo" class="logo home-logo" src="<?php echo get_template_directory_uri().'/assets/home-header-logo.svg'?>"/>
+					<img id="logo" class="logo home-logo" src="<?php echo get_template_directory_uri().'/assets/event-header-logo.svg'?>"/>
 				</a>
 			
 				<nav id="site-navigation" class="site-menu site-menu-events">

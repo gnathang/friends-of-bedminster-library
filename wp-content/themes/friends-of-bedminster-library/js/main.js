@@ -21,3 +21,13 @@ showMenuContact = () => {
   document.body.classList.toggle("disable-scroll");
 
 }
+
+jQuery(document).ready(function( $ ) {
+  $(".scroll").click(function(event){
+    event.preventDefault();
+    var section = $(this).attr("href");
+    $('html, body').animate({
+        scrollTop: $(section).offset().top - -2
+    });
+  });
+});

@@ -16,7 +16,7 @@
         </div>
         <h2 class="tagline"><?php bloginfo('description'); ?></h2>
         <a href="contact" class="button contact-button">Contact</a>
-        <a href="#join-us-section" class="button">Newsletter</a>
+        <a href="#join-us-section" class="button scroll">Newsletter</a>
       </div>
     </section>
 

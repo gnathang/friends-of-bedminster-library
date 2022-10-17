@@ -188,6 +188,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_filter( 'show_admin_bar', '__return_false' );
 
 // Create events custom post type
 
@@ -196,27 +197,16 @@ function create_posttype() {
     array(
       'labels' => array(
         'name' => __( 'Events' ),
-        'singular_name' => __( 'Event' )
+        'singular_name' => __( 'Events' )
       ),
       'public' => true,
       'has_archive' => true,
+			// naming the slug 'event', rather than 'events', means that the
+			// slug for the full events page still works. 
       'rewrite' => array('slug' => 'events'),
 			'supports' => array('title','author','thumbnail')
     )
   );
-
-	register_post_type( 'welcome-section',
-		array(
-			'labels' => array(
-				'name' => __( 'Welcome Section' ),
-				'singular_name' => __( 'Welcome Section' )
-			),
-			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'welcome-section'),
-			'supports' => array('title','author','thumbnail')
-		)
-	);
 
 	register_post_type( 'sections',
 		array(

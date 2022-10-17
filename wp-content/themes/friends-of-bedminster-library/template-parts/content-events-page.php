@@ -25,7 +25,7 @@
 
     if ($eventPage->have_posts() ) : while($eventPage->have_posts() ) : ($eventPage->the_post()); ?>
 
-    <div class="event-wrapper">
+    <div class="event-wrapper scroll-top" id="<?php echo get_the_ID(); ?>">
 
       <div class="event-image-wrapper">
         <img src="<?php the_field('event_image'); ?>">
@@ -35,12 +35,12 @@
         <h2 class="event-title"><?php the_title(); ?></h2>
 
         <div class="event-date-wrapper">
-          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/calendar4-icon.svg">
+          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/calendar-icon.svg">
           <h2 class="event-date"><?php the_field('event_date'); ?> <?php the_field('event_date_end'); ?></h2>
         </div>
 
         <div class="event-location-wrapper">
-          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/pin4-icon.svg">
+          <img class="event-icon" src="<?php bloginfo('template_directory');?>/assets/pin-icon.svg">
           <h2 class="event-location"><?php the_field('event_location'); ?></h2>
         </div>
 

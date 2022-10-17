@@ -32,17 +32,28 @@
         
         
         <div class="event-thumbnail-wrapper">
-          <a href="<?php the_permalink(); ?>">
+          
+          <!-- this function brings the user to the specific event on the events page -->
+          <?php $events_page = get_post(90); ?>
+          <a href="<?php esc_url( the_permalink($events_page->ID) ); ?>#<?php echo get_the_ID(); ?>">
+
           <div class="event-thumbail-image-wrapper">
             <img class="event-thumbnail-image" src="<?php the_field('event_image'); ?>">
-          </div>
+          </div>  
 
           <div class="event-thumbnail-date-and-title">
+            <div class="find-out-more">
+              <img class="arrow-right" src="<?php echo get_template_directory_uri().'/assets/arrow-right.svg'?>">
+              <h3>Find out more</h3>
+            </div>
             <h3 class="event-thumbnail-title"><?php the_title(); ?></h3>
-            <h3><?php the_field('event_date');?></h3>
+            <div class="event-thumbnail-date-wrapper">
+              <h3 class="event-thumbnail-date"><?php the_field('event_date');?></h3>
+              <h3 class="event-thumbnail-date">&nbsp<?php the_field('event_date_end');?></h3>
+            </div>
           </div>
-          </a>
 
+          </a>
         </div> <!-- .event-thumbnail-wrapper -->
         
 

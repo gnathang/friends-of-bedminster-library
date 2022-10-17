@@ -49,8 +49,12 @@
 				<nav id="site-menu-small" class="site-menu site-menu-small">
 					<?php wp_nav_menu(); ?>
 					<div class="social-links-small-menu">
-						<img src="<?php echo get_template_directory_uri().'/assets/facebook.svg'?>">
-						<img src="<?php echo get_template_directory_uri().'/assets/insta.svg'?>">
+						<a href="https://www.facebook.com/groups/friendsofbedminsterlibrary/" class="social-links">
+							<img src="<?php echo get_template_directory_uri().'/assets/facebook.svg'?>">
+						</a>
+						<a href="https://www.instagram.com/friendsofbedminsterlibrary/" class="social-links">
+							<img src="<?php echo get_template_directory_uri().'/assets/insta.svg'?>">
+						</a>
 					</div>
 				</nav>
 

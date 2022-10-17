@@ -1,5 +1,5 @@
 
-<section id="#join-us-section" class="join-us-section">
+<section id="join-us-section" class="join-us-section">
   <div class="container">
 
     <?php
@@ -26,7 +26,11 @@
           <div class="join-bristol-libraries-wrapper">
             <div class="join-bristol-libraries-inner-wrapper">
               <h3><?php the_field('join_bristol_libraries_text'); ?></h3>
-              <button class="button">Join Bristol Libraries</button>
+              <button class="button">
+                <a href="https://www.bristol.gov.uk/residents/libraries-and-archives/join-the-library">
+                  Join Bristol Libraries
+                </a>
+              </button>
             </div>
           </div>
 

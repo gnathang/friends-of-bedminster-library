@@ -14,10 +14,14 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="footer-wrapper">
-				<h3 class="footer-text">Friends of Bedminster Library. <br> Site by Kamma Creative. <span class="velvetyne"><br> Fonts by Deeghest and Velvetyne Type Foundry.</span></h3>
+				<h3 class="footer-text">Friends of Bedminster Library <br> Site by Kamma Creative <span class="velvetyne"><br> Fonts by Deeghest and Velvetyne Type Foundry</span></h3>
 				<div class="social-links-footer">
-					<img src="<?php echo get_template_directory_uri().'/assets/facebook.svg'?>">
-					<img src="<?php echo get_template_directory_uri().'/assets/insta.svg'?>">
+					<a href="https://www.facebook.com/groups/friendsofbedminsterlibrary/" class="social-links">
+						<img src="<?php echo get_template_directory_uri().'/assets/facebook.svg'?>">
+					</a>
+					<a href="https://www.instagram.com/friendsofbedminsterlibrary/" class="social-links">
+						<img src="<?php echo get_template_directory_uri().'/assets/insta.svg'?>">
+					</a>
 				</div>
 			</div>
 		</div>

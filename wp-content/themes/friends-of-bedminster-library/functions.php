@@ -214,16 +214,28 @@ function create_posttype() {
 				'name' => __( 'Sections' ),
 				'singular_name' => __( 'Section' )
 			),
+			'capability_type' => 'post',
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'section'),
-			'supports' => array('title','author','thumbnail')
+			'supports' => array('title','author','thumbnail','comments')
 		)
 	);
 
+	register_post_type( 'instagram_streams',
+    array(
+      'labels' => array(
+        'name' => __( 'Instagram Stream' ),
+        'singular_name' => __( 'Instagram Stream' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'instagram-streams'),
+    )
+  );
+
 }
 add_action( 'init', 'create_posttype' );
-
 
 // create hero iamge.
 function background ($hero_image) {

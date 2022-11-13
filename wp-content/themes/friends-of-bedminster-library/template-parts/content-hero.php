@@ -1,7 +1,8 @@
 <?php
 
   $args = array(
-    'post_type' => 'welcome-section',
+    'name' => 'hero',
+    'post_type' => 'sections',
     'posts_per_page' => 1,
   );
 

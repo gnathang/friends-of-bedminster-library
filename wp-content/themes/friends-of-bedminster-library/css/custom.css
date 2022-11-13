@@ -15,31 +15,14 @@
 
 }
 
-.font-cormorant {
-	font-family: 'Cormorant Garamond', serif;
-}
-
-.font-nanum {
-	font-family: 'Nanum Myeongjo', serif;
-}
-
-.font-taviraj {
-	font-family: 'Taviraj', serif;
-	font-weight: 200;
-}
-
-.font-abordage {
-	font-family: 'Abordage', 'Trebuchet MS', 'Lucida Sans Unicode',
-		'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 /* Global styles */
 body {
 	font-family: 'Abordage', 'Trebuchet MS', 'Lucida Sans Unicode',
 		'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	line-height: 1.5;
-	/* lighter shade of the pastel blue in figma */
 	color: #edfffa;
+	background-color: #4a9f95;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -87,7 +70,6 @@ h1, h2, h3 {
 /* Header styles */
 
 .site-header {
-	/* padding: 40px 15px 40px 15px; */
 	padding-top: 40px;
 	padding-bottom: 40px;
 	display: flex;
@@ -102,9 +84,6 @@ h1, h2, h3 {
 	justify-content: space-between;
 	align-items: flex-end;
   font-family: 'Khmer';
-	-webkit-font-smoothing: antialiased;
-	/* padding-bottom: 20px; */
-	/* border-bottom: #edfffa ridge 2px; */
 }
 
 .events-header {
@@ -112,7 +91,7 @@ h1, h2, h3 {
 }
 
 .contact-header {
-	background-color: #a4dfc3;
+	background-color: #E7EEDE;
 }
 
 .logo-container {
@@ -179,7 +158,6 @@ h1, h2, h3 {
 	right: 45px;
 	color: #147d5e;
 	text-align: right;
-	
 }
 
 .site-menu-small ul li a {
@@ -200,7 +178,6 @@ h1, h2, h3 {
 	height: 30px;
 	transition: all 0.5s ease;
 }
-
 
 .hamburger-menu, .logo {
 	z-index: 3;
@@ -226,14 +203,6 @@ h1, h2, h3 {
 	overflow: hidden;
 }
 
-/* .small-nav {
-	position: fixed;
-	display: block;
-	width: 100%;
-	height: 100%;
-	top: -100;
-	left: 0;
-} */
 
 /* Hero styles */
 
@@ -250,7 +219,7 @@ h1, h2, h3 {
 	justify-content: center;
 }
 .hero-image {
-	width: 100wv !important;
+	width: 100vw;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
@@ -322,7 +291,6 @@ h1, h2, h3 {
 	display: flex;
 }
 
-
 .event-thumbnail-date-and-title {
 	display: flex;
 	justify-content: space-between;
@@ -341,13 +309,11 @@ h1, h2, h3 {
 	color:#edfffa;
 }
 
-
 .event-thumbnail-date-and-title:hover {
 	display: flex;
 	background-color: rgb(46, 90, 64, 0.6);
 	opacity: 1;
 }
-
 
 .event-thumbnail-date-and-title:hover .find-out-more {
 	display: flex;
@@ -364,7 +330,6 @@ h1, h2, h3 {
 	top: 0;
 	opacity: 0;
 	width: 100%;
-	/* transition: all 0.5s ease; */
 }
 
 .find-out-more h3 {
@@ -382,7 +347,6 @@ h1, h2, h3 {
 	justify-content: space-between;
 	align-items: center;
 	transition: all 0.5s ease;
-
 }
 
 .start-date-wrapper {
@@ -394,22 +358,21 @@ h1, h2, h3 {
 /* Join us styles */
 
 .join-us-section {
-	/* background-color: #a4dfc3; */
 	background-color: #147d5e;
 	padding-top: 2px;
 	padding-bottom: 80px;
-	color: #147d5e;
+	color: #2f622f;
 }
 
 .join-us-wrapper {
-	/* background-color: #A4DFC3; */
-	background-color: #f5f8df;;
+	text-align: center;
+	background-color: #f5f8df;
 	font-size: 20px;
 	line-height: 1.5;
 	padding: 40px;
 	display: flex;
 	flex-wrap: wrap;
-	border: #13614a solid 4px;
+	border: #2f622f solid 4px;
 }
 
 .join-us-wrapper button:hover,
@@ -418,11 +381,11 @@ h1, h2, h3 {
 }
 
 .join-the-newsletter {
-	color: #2e5a40;
+	color: #2f622f;
 	font-size: 33px;
 	width: 100%;
 	padding-bottom: 20px;
-	border-bottom: #147d5e solid 2px;
+	border-bottom: #35704e solid 2px;
 }
 
 .join-bristol-libraries-wrapper button:hover {
@@ -440,11 +403,20 @@ h1, h2, h3 {
 	font-family: 'Khmer', 'Tamiraj', serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 25px;
-	color: #147d5e;
+	color: #35704e;
 	background-color: inherit;
 	padding: 15px;
 	margin-bottom: 10px;
-	border: #147d5e solid 4px;
+	border: #2f622f solid 4px;
+}
+
+.join-newsletter-wrapper input:focus{
+	border-color: #be9519;
+	outline: none;
+}
+
+.wpcf7-form .input:focus {
+	outline: none;
 }
 
 #mce-FNAME, #mce-EMAIL {
@@ -484,33 +456,28 @@ h1, h2, h3 {
 
 /* Contact section Styles */
 
+.page-id-92 {
+	background-color: #E6EFDE;
+}
+
 .contact-page-section {
-	background-color: #A4DFC3;
-	padding-top: 1px;
-	padding-bottom: 80px;
+	background-color: #E7EEDE;
+	padding-top: 30px;
 	color: #147d5e;
 }
 
 .contact-page-section .join-us-section {
-	background-color: #A4DFC3;
-}
-
-.contact-page-section .join-us-wrapper {
-	border-color: #147d5e;
+	background-color: #E7EEDE;
 }
 
 .contact-footer {
-	background-color: #a4dfc3;
+	background-color: #E7EEDE;
 	font-family: 'Khmer', 'Taviraj', serif;
 	-webkit-font-smoothing: antialiased;
 	color: #147d5e;
 	padding-top: 30px;
 	padding-bottom: 10px;
 }
-
-/* .library-opening-times {
-	font-family: 'Abordage', 'Khmer', 'Taviraj', 'Verdana', sans-serif;
-} */
 
 .contact-footer h3 {
 	font-size: 22px;
@@ -534,14 +501,14 @@ margin-top: 70px;
 }
 
 .wpcf7-form .input,
-textarea {
+textarea {	
 	display: block;
 	width: 100%;
 	font-family: 'Khmer', 'Taviraj', serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 25px;
 	color: #147d5e;
-	background-color: #bfeed8;
+	background-color: #ddf6e34e;
 	padding: 15px;
 	margin-bottom: 30px;
 	margin-right: 0;
@@ -553,17 +520,25 @@ input[type="email"]:focus {
 	color: #147d5e;
 }
 
+.wpcf7-form .input:focus-visible,
+.wpcf7-form .textarea:focus-visible,
+.wpcf7-form .input:active,
+.wpcf7-form .textarea:active {
+	border-color: #be9519;
+}
+
+.wpcf7-form .input:focus {
+	outline: none;
+}
+
 .submit-send-button {
 	font-family: 'Khmer', 'Taviraj', serif;
-	-webkit-font-smoothing: antialiased;
 	font-size: 22px;
 	font-weight: 400;
 	padding: 16px 15px 10px 15px;
 	border: #147d5e solid 4px;
 	border-radius: 0%;
-	/* background-color: #eaeceb; */
-	background-color: #bfeed8;
-
+	background-color: #ddf6e34e;
 }
 
 .form-message {
@@ -593,13 +568,15 @@ input[type="email"]:focus {
 	padding: 0;
 }  
 
-
 /* Events Page styles */
+
+.page-id-90 {
+	background-color: #147d5e;
+}
 
 .events-section {
 	background-color: #147d5e;
 	padding-top: 20px;
-	/* padding-bottom: 30px; */
 }
 
 html { 
@@ -635,7 +612,6 @@ html {
 
 .event-title {
 	min-width: 100%;
-	/* margin-block-start: 0.5em !important; */
 	margin-block-end: 0.3em !important;
 }
 
@@ -669,7 +645,7 @@ html {
 
 .event-image-wrapper img {
 	object-fit: cover;
-	/* border: #edfffa solid 3px; */
+	max-height: 650px;
 }
 
 .event-description-wrapper {
@@ -682,9 +658,11 @@ html {
 /* Footer styles */
 
 .site-footer {
-	background-color: #a4dfc3;
+	background-color: #E7EEDE;
 	color: #147d5e;
+	padding-bottom: 10px;
 }
+
 .footer-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -705,6 +683,13 @@ html {
 	margin-right: 10px;
 }
 
+.overscroll-footer {
+	height: 300px !important;
+	position: absolute !important;
+	padding-bottom: 400px !important;
+	background-color: #E6EFDE !important;
+}
+
 /* Responsive Styles */
 
 @media(max-width:1385px) {
@@ -720,7 +705,6 @@ html {
 		margin-block-start: 0.5em;
 		margin-block-end: 0.5em;
 		font-size: 15px;
-		/* max-height: 20px; */
 	}
 }
 
@@ -773,6 +757,23 @@ html {
 	}
 }
 
+@media(max-width:950px) {
+
+	.join-us-wrapper {
+		justify-content: center;
+	}
+
+	.join-newsletter-wrapper,
+	.join-bristol-libraries-wrapper {
+		max-width: 100%;
+		margin-bottom: 70px;
+		font-size: 18px;
+		line-height: 1.8;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
 @media (max-width: 830px) {
 
 	.event-thumbnail-loop {
@@ -785,32 +786,29 @@ html {
 		margin: 30px 0px 40px 0px;
 	}
 
-	.join-newsletter-wrapper,
-	.join-bristol-libraries-wrapper {
-		max-width: 100%;
-		margin-bottom: 70px;
-		font-size: 20px;
-		line-height: 1.8;
-		text-align: center;
-		padding-right: 0px;
-		padding-left: 0px;
-	}
-
 	.join-the-newsletter {
 		text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     padding-bottom: 0px;
+	}
+
+	.join-the-newsletter input {
+		font-size: 18px;
 	}
 
 	.join-us-section {
 		padding-bottom: 80px;
 	}
 
-	.newsletter-form input,
 	.wpcf7-form .input,
 	.wpcf7-form .textarea {
-		font-size: 20px;
+		font-size: 18px;
 		margin-bottom: 20px;
+	}
+
+	.mc-field-group input{
+		font-size: 18px;
+
 	}
 
 	.contact-wrapper {
@@ -822,7 +820,7 @@ html {
 @media (max-width: 700px) {
 
 	.container {
-		width: 100vw;
+		width: 100%;
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -854,6 +852,10 @@ html {
 	.event-image-wrapper {
 		max-width: 100%;
 	}
+
+	.event-image-wrapper img {
+		max-height: 70vh;
+	}
 	
 	.event-thumbnail-loop {
 	-moz-column-count: 1;
@@ -877,6 +879,16 @@ html {
 	.velvetyne {
 		display: none;
 	}
+
+	.submit-send-button {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.newsletter-submit-button {
+		font-size: 20px !important;
+	}
+
 }
 
 @media (min-width: 700px) {
@@ -888,7 +900,7 @@ html {
 @media (max-width: 500px) {
 
 	.container {
-		width: 100vw;
+		width: 100%;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -909,4 +921,10 @@ html {
 	.event-title-date-wrapper {
 		font-size: 16px;
 	}
+
+	.contact-wrapper-text {
+		max-width: 100%;
+		text-align: center;
+	}
+	
 }

@@ -26,9 +26,11 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
-<?php // wp_footer(); ?>
+</div><!-- #page -->
 <!-- <script src="./js/main.js"></script> -->
 </body>
 </html>
+<div class="overscroll-footer">
+	
+</div>

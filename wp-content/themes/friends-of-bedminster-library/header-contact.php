@@ -39,7 +39,7 @@
 				</a>
 		
 				<nav id="site-navigation" class="site-menu site-menu-contact">
-					<?php wp_nav_menu()?>
+					<?php wp_nav_menu(); ?>
 				</nav><!-- #site-navigation -->
 
 				<img src="<?php echo get_template_directory_uri().'/assets/hamburger-green.svg'?>" id="hamburger-menu-green" class="hamburger-menu" onclick="showMenuContact();">
